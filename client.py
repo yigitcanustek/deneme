@@ -16,11 +16,11 @@ try:
 except:
 	print("baglanti hatasi")
 	sys.exit()
-
+#bu benim için
 sGelen=csock.recvfrom(buf)##
 liste="Yuklenmis dosyalar  {}".format(sGelen[0].decode('utf-8'))
 print(liste)
-
+#krngerşngr
 girdi=input("\n->GET dosyaAdi\n->PUT dosyaAdi\n")
 komutGiden=str.encode(girdi)
 csock.sendto(komutGiden,(IP,PORT))###
@@ -34,7 +34,7 @@ try:
 		if boyut.decode()=="error":
 			print("Yanlis dosya adi girdiniz")
 		else:
-
+			#bu da Yiğitcan için
 			f=open("(1)"+komutGiden[1],"wb")
 			dosya=csock.recvfrom(buf)[0]
 			try:
