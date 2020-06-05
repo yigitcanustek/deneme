@@ -42,7 +42,7 @@ try:
 					dosya=csock.recvfrom(buf)[0]
 					f.write(dosya)
 					i+=1
-					print("{}. dosya parcasi alindi".format(i))
+					
 					csock.settimeout(3)
 			except socket.error:
 				f.close()
