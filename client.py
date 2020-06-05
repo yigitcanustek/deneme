@@ -85,4 +85,4 @@ try:
 				csock.sendto(b"error",(IP,PORT))
 				csock.close()
 except socket.error:
-	print("HATA BULUNDU")
+	print("BIR HATA BULUNDU")
