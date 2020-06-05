@@ -16,7 +16,8 @@ try:
 except:
 	print("baglanti hatasi")
 	sys.exit()
-#bu benim için
+#bu benim için Selin Gül
+
 sGelen=csock.recvfrom(buf)##
 liste="Yuklenmis dosyalar  {}".format(sGelen[0].decode('utf-8'))
 print(liste)
